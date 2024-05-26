@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Regalo Misterioso</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>"El Regalo Misterioso"</h1>
+        <button id="playButton">Escuchar</button>
+        <audio id="backgroundMusic" src="Song.mp3"></audio>
+    </header>
+    <main>
+        <section id="game">
+            <p>Para dar con la identidad del autor</p>
+            <p>deberás encontrar su número</p>
+            <form id="guessForm">
+                <input type="text" id="guessInput" maxlength="9" pattern="\d{9}" required>
+                <button id="checkButton" type="submit">Probar</button>
+            </form>
+            <div id="hint"></div>
+            <div id="successGif" style="display: none;">
+                <img src="Img/Éxito.gif" alt="¡Éxito!">
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
